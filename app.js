@@ -10,8 +10,8 @@ myApp.config(function ($routeProvider) {
   })
 
   .when('/project', {
-    templateUrl: 'pages/projects.html',
-    controller: 'projectsController'
+    templateUrl: 'pages/project.html',
+    controller: 'projectController'
   })
 
   .when('/cs-170', {
@@ -29,9 +29,9 @@ myApp.controller('meController', ['$scope', '$log', function($scope, $log) {
 
 }]);
 
-myApp.controller('projectsController', ['$scope', '$log', function($scope, $log) {
+myApp.controller('projectController', ['$scope', '$log', function($scope, $log) {
   
-  $log.info('second');
+  $log.info('project');
 
 
 }]);
