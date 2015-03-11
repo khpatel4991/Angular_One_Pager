@@ -19,6 +19,11 @@ myApp.config(function ($routeProvider) {
     controller: 'cs170Controller'
   })
 
+  .when('/social', {
+    templateUrl: 'pages/social.html',
+    controller: 'socialController'
+  })
+
 
 });
 
@@ -39,6 +44,13 @@ myApp.controller('projectController', ['$scope', '$log', function($scope, $log) 
 myApp.controller('cs170Controller', ['$scope', '$log', function($scope, $log) {
   
   $log.info('cs-170');
+
+
+}]);
+
+myApp.controller('socialController', ['$scope', '$log', function($scope, $log) {
+  
+  $log.info('social');
 
 
 }]);
