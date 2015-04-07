@@ -27,30 +27,26 @@ myApp.config(function ($routeProvider) {
 
 });
 
-myApp.controller('meController', ['$scope', '$log', function($scope, $log) {
-  
-  $log.info('me');
+myApp.controller('meController', ['$scope', '$log', '$location', function($scope, $log, $location) {
 
-
-}]);
-
-myApp.controller('projectController', ['$scope', '$log', function($scope, $log) {
-  
-  $log.info('project');
-
+  $log.info($location.absUrl());
 
 }]);
 
-myApp.controller('cs170Controller', ['$scope', '$log', function($scope, $log) {
+myApp.controller('projectController', ['$scope', '$log', '$location', function($scope, $log, $location) {
   
-  $log.info('cs-170');
-
+  $log.info($location.absUrl());
 
 }]);
 
-myApp.controller('socialController', ['$scope', '$log', function($scope, $log) {
+myApp.controller('cs170Controller', ['$scope', '$log', '$location', function($scope, $log, $location) {
   
-  $log.info('social');
+  $log.info($location.absUrl());
 
+}]);
+
+myApp.controller('socialController', ['$scope', '$log', '$location', function($scope, $log, $location) {
+  
+  $log.info($location.absUrl());
 
 }]);
